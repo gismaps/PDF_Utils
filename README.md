@@ -1,2 +1,2 @@
-# PDF_Utils
-PDF Utilities
+# PDF Utils
+PDF Utilities to make common tasks a bit easier
