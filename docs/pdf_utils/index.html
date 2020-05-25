@@ -23,10 +23,12 @@ with scanned PDF documents …" />
 <section id="section-intro">
 <p>Welcome to pdf_utils. The purpose of this package is to fix problems
 with scanned PDF documents. </p>
-<p><strong>Note</strong> - pdf_utils contains a module <code><a title="pdf_utils.PDF" href="PDF.html">pdf_utils.PDF</a></code> which contains a class
-<code><a title="pdf_utils.PDF" href="PDF.html">pdf_utils.PDF</a></code>. Since pdf_utils.PDF.PDF seemed redundant, this package imports
-the PDF class. The documentation still shows the extra PDF module in the
-middle, but just import the class as <code><a title="pdf_utils.PDF" href="PDF.html">pdf_utils.PDF</a></code>.</p>
+<p><strong>Note</strong> - pdf_utils contains a module 'PDF' which contains a class also
+named 'PDF'. Since pdf_utils.PDF.PDF seemed redundant, this package
+imports the PDF class. The documentation still shows the extra PDF
+module in the middle, but just import the class like this: </p>
+<pre><code>from pdf_utils import PDF
+</code></pre>
 <details class="source">
 <summary>
 <span>Expand source code</span>
@@ -35,10 +37,14 @@ middle, but just import the class as <code><a title="pdf_utils.PDF" href="PDF.ht
 Welcome to pdf_utils. The purpose of this package is to fix problems
 with scanned PDF documents. 
 
-**Note** - pdf_utils contains a module `PDF` which contains a class 
-`PDF`. Since pdf_utils.PDF.PDF seemed redundant, this package imports 
-the PDF class. The documentation still shows the extra PDF module in the
-middle, but just import the class as `pdf_utils.PDF`. 
+**Note** - pdf_utils contains a module &#39;PDF&#39; which contains a class also 
+named &#39;PDF&#39;. Since pdf_utils.PDF.PDF seemed redundant, this package 
+imports the PDF class. The documentation still shows the extra PDF
+module in the middle, but just import the class like this: 
+
+```
+from pdf_utils import PDF
+``` 
 &#34;&#34;&#34;
 
 from .PDF import PDF</code></pre>
