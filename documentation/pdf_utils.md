@@ -54,7 +54,7 @@ Module for PDF utilities.
 
 
 
-> `class PDF(file_path: str)`
+> `class PDF(file_path:Â str)`
 
 
 An object that represents a single PDF file. 
@@ -129,7 +129,7 @@ OSError: When setting this property, OSError is raised if
 
 
     
-> `def interleave(self, pdf: <module 'pdf_utils.PDF' from 'C:\\git\\PDF_Utils\\src\\pdf_utils\\PDF.py'>, first: bool = True, out_path: str = None) -> NoneType`
+> `def interleave(self, pdf:Â <moduleÂ 'pdf_utils.PDF'Â fromÂ 'C:\\git\\PDF_Utils\\src\\pdf_utils\\PDF.py'>, first:Â boolÂ =Â True, out_path:Â strÂ =Â None) -> NoneType`
 
 
 Interleave the pages from another PDF with this one. 
@@ -197,7 +197,7 @@ first=False)```
 
 
     
-> `def reverse(self, out_path: str = None) -> NoneType`
+> `def reverse(self, out_path:Â strÂ =Â None) -> NoneType`
 
 
 Reverse the page order (from last to first) of the PDF. 
