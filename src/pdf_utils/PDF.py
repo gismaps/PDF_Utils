@@ -16,6 +16,14 @@ class PDF(object):
     Contains utilities to solve basic problems, like reversing the 
     order of the pages in a scan.  
     
+    **Note** - This 'PDF' class technically resides in a module of the
+    same name. Since the pdf_utils package imports this class, you
+    should skip the extra 'PDF' in the import, like this: 
+
+    ```
+    from pdf_utils import PDF
+    ``` 
+    
     '''
 
     # TODO: Subset pages
@@ -44,10 +52,6 @@ class PDF(object):
     
         Raises:
             OSError: If the file_path parameter does not exist 
-
-        Note: 
-            The pdf_utils module imports this class directly,
-            so don't add the extra '.PDF' for the module it's in. 
 
         Example: 
             How to import and instantiate:

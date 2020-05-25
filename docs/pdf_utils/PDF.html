@@ -43,6 +43,14 @@ class PDF(object):
     Contains utilities to solve basic problems, like reversing the 
     order of the pages in a scan.  
     
+    **Note** - This &#39;PDF&#39; class technically resides in a module of the
+    same name. Since the pdf_utils package imports this class, you
+    should skip the extra &#39;PDF&#39; in the import, like this: 
+
+    ```
+    from pdf_utils import PDF
+    ``` 
+    
     &#39;&#39;&#39;
 
     # TODO: Subset pages
@@ -71,10 +79,6 @@ class PDF(object):
     
         Raises:
             OSError: If the file_path parameter does not exist 
-
-        Note: 
-            The pdf_utils module imports this class directly,
-            so don&#39;t add the extra &#39;.PDF&#39; for the module it&#39;s in. 
 
         Example: 
             How to import and instantiate:
@@ -259,6 +263,11 @@ class PDF(object):
 <p>Contains utilities to solve basic problems, like reversing the
 order of the pages in a scan.
 </p>
+<p><strong>Note</strong> - This 'PDF' class technically resides in a module of the
+same name. Since the pdf_utils package imports this class, you
+should skip the extra 'PDF' in the import, like this: </p>
+<pre><code>from pdf_utils import PDF
+</code></pre>
 <h2 id="args">Args</h2>
 <dl>
 <dt><strong><code>file_path</code></strong> :&ensp;<code>str</code></dt>
@@ -273,9 +282,6 @@ order of the pages in a scan.
 <dl>
 <dt><code>OSError</code></dt>
 <dd>If the file_path parameter does not exist </dd>
-<dt><strong><code>Note</code></strong></dt>
-<dd>The pdf_utils module imports this class directly,
-so don't add the extra '.PDF' for the module it's in.</dd>
 <dt><strong><code>Example</code></strong></dt>
 <dd>How to import and instantiate:<pre><code>from pdf_util import PDF
 my_pdf = PDF('/path/to/file.pdf')
@@ -292,6 +298,14 @@ my_pdf = PDF('/path/to/file.pdf')
     
     Contains utilities to solve basic problems, like reversing the 
     order of the pages in a scan.  
+    
+    **Note** - This &#39;PDF&#39; class technically resides in a module of the
+    same name. Since the pdf_utils package imports this class, you
+    should skip the extra &#39;PDF&#39; in the import, like this: 
+
+    ```
+    from pdf_utils import PDF
+    ``` 
     
     &#39;&#39;&#39;
 
@@ -321,10 +335,6 @@ my_pdf = PDF('/path/to/file.pdf')
     
         Raises:
             OSError: If the file_path parameter does not exist 
-
-        Note: 
-            The pdf_utils module imports this class directly,
-            so don&#39;t add the extra &#39;.PDF&#39; for the module it&#39;s in. 
 
         Example: 
             How to import and instantiate:
