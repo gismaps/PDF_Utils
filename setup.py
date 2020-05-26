@@ -16,12 +16,15 @@ import shutil
 import sys
 from platform import python_revision
 
-def cleanup(package_dict):
+def cleanup(name: str):
+    '''
+    Clean up extraneous files from the build process.
+    
+    Args:
+        name (str): The top-level package name.
+    '''
     shutil.rmtree('./build', ignore_errors=True)
-    shutil.rmtree('[].egg-info'.format(package_dict['name']), 
-                  ignore_errors=True)
-    shutil.rmtree('./src/{}.egg-info'.format(package_dict['name']), 
-                  ignore_errors=True)
+    shutil.rmtree('./src/{}.egg-info'.format(name), ignore_errors=True)
 
 
 package_dict = {'name': '', '__version__': '', '__author__': ''}
@@ -34,7 +37,7 @@ with open(init_path) as init:
                 package_dict[key] = line.split('=')[1].strip().strip("\"'")
                 print(f'  >> {key}: {package_dict[key]}')
 
-cleanup(package_dict)  # remove previous build cruft
+cleanup(package_dict['name'])  # remove previous build cruft
 
 with open('README.md') as fh: 
     long_description = fh.read()
@@ -69,7 +72,7 @@ setuptools.setup(
     python_requires = '>=3.6',
     )
 
-cleanup(package_dict)  # remove build cruft
+cleanup(package_dict['name'])  # remove build cruft
 
 print('setup.py ended normally')
 
