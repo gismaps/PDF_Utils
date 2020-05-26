@@ -34,6 +34,6 @@ Follow these steps to install pdf_utils into your Python environment:
 	```  
 
 ## License
-Distributed with the MIT license - see [license.txt](./license.txt). Note that 
+Distributed with the MIT license - see [LICENSE.txt](./LICENSE.txt). Note that 
 this makes use of other packages with their own license agreements, most 
 notably the [pdfrw package](https://pypi.org/project/pdfrw/). 
