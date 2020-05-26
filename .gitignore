@@ -1,9 +1,6 @@
 *.pyc
 
 
-apidoc/*
-
-
 # PyDev/Eclipse
 .project
 .pydevproject
